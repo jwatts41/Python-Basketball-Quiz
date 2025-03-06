@@ -37,23 +37,26 @@ else:
     print("Incorrect, the correct answer is 30. 3 Questions Remaining")
 
 question = input("Question 5. What college basketball coach holds the record for the most wins of all time? ")
-if question.lower() == "coach k" or question.title() == "Coach K" or question.title() == "Mike Krzyzewski" or question.title() == "Krzyzewski":
+if question.lower() == "coach k" or question.title() == "Coach K" or question.title() == "Mike Krzyzewski" or question.title() == "Krzyzewski" or question.lower() == "k":
     print("Correct! 2 Questions Remaining")
     score += 1
 else:
     print("Incorrect. The correct answer is Coach K. 2 Questioning Remaining")
 
 question = input("Question 6. What NBA basketball coach holds the record for the most wins of all time? ")
-if question.lower() == "gregg popovich" or question.title() == "Gregg Popovich" or question.title() == "Popovich":
+if question.lower() == "gregg popovich" or question.title() == "Gregg Popovich" or question.title() == "Popovich" or question.lower() == "pop" or question.lower() == "coach pop":
     print("Correct! 1 Question Remaining")
     score +=1
 else:
     print("Incorrect. The correct answer is Gregg Popovich. 1 question remaining")
 
-question = input("Question 7. Who is a better college basketball team? North Carolina or Duke?")
-if question.lower() == "north carolina" or question.lower() == "carolina" or question.title() == "North Carolina":
+question = input("Question 7. Who is a better college basketball team? North Carolina or Duke? ")
+if question.lower() == "north carolina" or question.lower() == "carolina" or question.title() == "North Carolina" or question.lower() == "unc":
     print("Correct!")
     score += 1
 else:
     print("Incorrect. The correct answer is North Carolina. Do better")
+
+print("You got " + str(score) + " questions correct.")
+print("You got " + str((round(score/7 * 100, 1))) + "%")
 
