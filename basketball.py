@@ -21,3 +21,17 @@ if question.lower() == "ucla":
     score += 1
 else:
     print("Incorrect. The correct answer is UCLA.")
+
+question = input("Which NBA team holds the record for the most regular season wins? ")
+if question.lower() == 'warriors' or question.lower() == "golden state" or question.lower() == "golden state warriors":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect. The correct answer is the Golden State Warriors.")
+
+question = input("How many teams are currently in the NBA? ")
+if question == 30:
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect, the correct answer is 30.")
