@@ -30,8 +30,22 @@ else:
     print("Incorrect. The correct answer is the Golden State Warriors.")
 
 question = input("How many teams are currently in the NBA? ")
-if question == 30:
+if question == "30":
     print("Correct!")
     score += 1
 else:
     print("Incorrect, the correct answer is 30.")
+
+question = input("What college basketball coach holds the record for the most wins of all time? ")
+if question.lower() == "coach k" or question.title() == "Coach K" or question.title() == "Mike Krzyzewski" or question.title() == "Krzyzewski":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. The correct answer is Coach K.")
+
+question = input("What NBA basketball coach holds the record for the most wins of all time? ")
+if question.lower() == "gregg popovich" or question.title() == "Gregg Popovich" or question.title() == "Popovich":
+    print("Correct!")
+    score +=1
+else:
+    print("Incorrect. The correct answer is Gregg Popovich.")
